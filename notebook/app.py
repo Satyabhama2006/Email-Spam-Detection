@@ -2,6 +2,8 @@ import streamlit as st
 import joblib
 import string
 from nltk.corpus import stopwords
+import nltk
+nltk.download("stopwords")
 
 # Load model and vectorizer
 model = joblib.load("spam_model.pkl")
